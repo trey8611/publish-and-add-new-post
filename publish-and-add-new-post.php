@@ -60,6 +60,7 @@ if ( !class_exists( 'TPSandAN' ) ) {
 					$whattodo = $_POST['and_add_new'];
 					switch ( $whattodo ) {
 						case 'normal':
+<<<<<<< HEAD
 							return esc_url_raw( $location );
 							break;
 						case 'addnew':
@@ -67,6 +68,15 @@ if ( !class_exists( 'TPSandAN' ) ) {
 							break;
 						case 'visit':
 							return esc_url_raw( get_permalink( $post->ID ) );
+=======
+							return esc_url( $location );
+							break;
+						case 'addnew':
+							return esc_url( admin_url( 'post-new.php?post_type='.$post->post_type.'&aan=addnew' ) );
+							break;
+						case 'visit':
+							return esc_url( get_permalink( $post->ID ) );
+>>>>>>> d687cd3ee4ca1f8ebdae0719c1a85d8053c644c7
 							break;
 					}
 				} else {
