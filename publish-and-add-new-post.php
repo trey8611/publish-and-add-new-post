@@ -3,7 +3,7 @@
  * Plugin Name: Publish And Add New Post
  * Plugin URI: http://ix3.us/publish-and-add-new-post
  * Description: Adds 3 radio boxes to the submit box for extra functionality. Normal Behavior, Auto Add New (Let's you automatically go to Add New after Publish/Update of a post), or Auto Visit (Redirects you to the front end URL of the post you just published/updated).
- * Version: 1.0
+ * Version: 1.1
  * Author: Trey
  * Author URI: http://ix3.us
  * License: GPL2
@@ -60,13 +60,13 @@ if ( !class_exists( 'TPSandAN' ) ) {
 					$whattodo = $_POST['and_add_new'];
 					switch ( $whattodo ) {
 						case 'normal':
-							return $location;
+							return esc_url_raw( $location );
 							break;
 						case 'addnew':
-							return admin_url( 'post-new.php?post_type='.$post->post_type.'&aan=addnew' );
+							return esc_url_raw( admin_url( 'post-new.php?post_type='.$post->post_type.'&aan=addnew' ) );
 							break;
 						case 'visit':
-							return get_permalink( $post->ID );
+							return esc_url_raw( get_permalink( $post->ID ) );
 							break;
 					}
 				} else {
