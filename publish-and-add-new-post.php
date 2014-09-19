@@ -1,29 +1,28 @@
 <?php
-/**
- * Plugin Name: Publish And Add New Post
- * Plugin URI: http://ix3.us/publish-and-add-new-post
- * Description: Adds 3 radio boxes to the submit box for extra functionality. Normal Behavior, Auto Add New (Let's you automatically go to Add New after Publish/Update of a post), or Auto Visit (Redirects you to the front end URL of the post you just published/updated).
- * Version: 1.1
- * Author: Trey
- * Author URI: http://ix3.us
- * License: GPL2
- */
- /*
-  Copyright 2014  ix3.us  (email : trey8611@gmail.com)
+/*
+Plugin Name: Publish And Add New Post
+Plugin URI: http://ix3.us/publish-and-add-new-post
+Description: Adds 3 radio boxes to the submit box for extra functionality. Normal Behavior, Auto Add New (Let's you automatically go to Add New after Publish/Update of a post), or Auto Visit (Redirects you to the front end URL of the post you just published/updated).
+Version: 1.1
+Author: Trey
+Author URI: http://ix3.us
+License: GPL2
+*/
+/*
+ Copyright 2014  ix3.us  (email : trey8611@gmail.com)
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License, version 2, as 
+   published by the Free Software Foundation.
 
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License, version 2, as 
-    published by the Free Software Foundation.
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
-    */
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
 if ( !class_exists( 'TPSandAN' ) ) {
 	class TPSandAN {
 		
